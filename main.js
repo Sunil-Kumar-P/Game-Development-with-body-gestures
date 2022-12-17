@@ -1,4 +1,4 @@
-import { Player } from './player';
+import { Player } from './player.js';
 import { InputHandler } from './input.js';
 import { BackGround } from './background.js';
 import { FlyingEnemy, ClimbingEnemy , GroundEnemy} from './enemies,js';

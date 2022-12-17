@@ -1,6 +1,8 @@
 import { Sitting ,Running,Jumping,Falling,Rolling,Diving,Hit} from 'playerStates.js';
 import { CollisionAnimation } from './collisionAnimation.js';
 import { FloatingMessage } from './FloatingMessages.js';
+
+
 export class Player{
     constructor(game){
         this.game=game;
@@ -62,7 +64,7 @@ export class Player{
         context.drawImage(this.image,this.frameX * this.width * this.frameY * this.height, this.width,this.height,this.x,this.y,);
     }
     onGround(){
-        return this.y > = this.game.height - this.height - this.game.groundMargin;
+        return this.y = this.game.height - this.height - this.game.groundMargin;
     }
     setState(state,speed){
         this.currentState = this.states[state];
