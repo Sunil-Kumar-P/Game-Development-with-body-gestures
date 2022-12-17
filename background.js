@@ -17,6 +17,7 @@ class Layer {
         context.drawImage(this.image, this.x + this.width, this.y, this.width, this.height);
     }
 }
+
 export class Background{
     constructor(game){
         this.game = game;

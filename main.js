@@ -1,11 +1,11 @@
 import { Player } from './player.js';
 import { InputHandler } from './input.js';
-import { BackGround } from './background.js';
-import { FlyingEnemy, ClimbingEnemy , GroundEnemy} from './enemies,js';
+import { Background } from './background.js';
+import { FlyingEnemy, ClimbingEnemy , GroundEnemy} from './enemies.js';
 import {UI} from './UI.js';
 
 window.addEventListener('load',function(){
-    const canvas = documnet.getElementById('canvas1');
+    const canvas = document.getElementById('canvas1');
     const ctx = canvas.getContext('2d');
     canvas.width=900;
     canvas.height=500;
@@ -17,7 +17,7 @@ window.addEventListener('load',function(){
             this.groundMargin = 60;
             this.speed = 0;
             this.maxSpeed= 3;
-            this.background = new this.background(this);
+            this.background = new Background(this);
             this.player = new Player(this);
             this.input=new InputHandler(this);   
             this.UI = new UI(this); 

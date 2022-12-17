@@ -12,7 +12,7 @@ const states = {
 
 class State {
     constructor(states, game) {
-        this.state = state;
+        this.states = states;
         this.game = game;
     }
 }
@@ -37,7 +37,7 @@ export class Sitting extends State {
 
 export class Running extends State {
     constructor(game){
-        super('RUNNING',this.game);
+        super('RUNNING',game);
     }
     enter(){
         this.game.player.maxFrame = 6;
@@ -72,7 +72,6 @@ export class Jumping extends State {
         }else if(input.includes('ArrowDown')){
             this.game.player.setState(this.state.DIVING, 0);
         }
-          
     }
 }
 
