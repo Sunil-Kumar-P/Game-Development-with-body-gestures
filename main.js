@@ -1,8 +1,8 @@
-import { Player } from './player.js';
-import { InputHandler } from './input.js';
-import { Background } from './background.js';
-import { FlyingEnemy, ClimbingEnemy , GroundEnemy} from './enemies.js';
-import {UI} from './UI.js';
+import { Player } from './js/player.js';
+import { InputHandler } from './js/input.js';
+import { Background } from './js/background.js';
+import { FlyingEnemy, ClimbingEnemy , GroundEnemy} from './js/enemies.js';
+import {UI} from './js/UI.js';
 
 window.addEventListener('load',function(){
     const canvas = document.getElementById('canvas1');

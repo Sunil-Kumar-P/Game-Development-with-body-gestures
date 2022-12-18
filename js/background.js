@@ -35,7 +35,7 @@ export class Background{
         this.layer5 = new Layer(this.game, this.width, this.height, 1, this.layer5Image);
         this.backgroundLayers = [this.layer1, this.layer2, this.layer3, this.layer4, this.layer5];
     }
-    update(){
+    update(context){
         this.backgroundLayers.forEach(layer => {
             layer.draw(context)
         })
