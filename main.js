@@ -73,7 +73,7 @@ window.addEventListener('load', function () {
             this.particles = this.particles.filter(particle => !particle.markedForDeletion);
             this.collisions = this.collisions.filter(collision => !collision.markedForDeletion);
             this.floatingMessages = this.floatingMessages.filter(message => !message.markedForDeletion);
-            console.log(this.enemies, this.particles, this.collisions, this.floatingMessages);
+            // console.log(this.enemies, this.particles, this.collisions, this.floatingMessages);
         }
         draw(context) {
             this.background.draw(context);
