@@ -47,7 +47,7 @@ export class Player {
         //sprite animation
         if (this.frameTimer > this.frameInterval) {
             this.frameTimer = 0;
-            if (this.framex, this.maxFrame) this.maxFrameX++;
+            if (this.framex  < this.maxFrame) this.maxFrameX++;
             else this.framex = 0;
         }
         else {
@@ -63,7 +63,7 @@ export class Player {
         context.drawImage(this.image, this.frameX * this.width , this.frameY * this.height, this.width, this.height, this.x, this.y, this.width, this.height);
     }
     onGround() {
-        return this.y = this.game.height - this.height - this.game.groundMargin;
+        return this.y >= this.game.height - this.height - this.game.groundMargin;
     }
     setState(state, speed) {
         this.currentState = this.states[state];
@@ -77,7 +77,7 @@ export class Player {
                 enemy.x < this.x + this.width &&
                 enemy.x + enemy.width > this.x &&
                 enemy.y, this.y + this.height &&
-                enemy.y + enemy.heihght > this.y
+                enemy.y + enemy.height > this.y
             ) {
                 enemy.markedForDeletion = true;
                 this.game.collisons.push(new CollisionAnimation(this.game, enemy.x + enemy.width * 0.5, enemy.y + enemy.height * 0.5))

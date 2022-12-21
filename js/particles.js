@@ -15,10 +15,11 @@ export class Dust extends Particle{
     constructor(game, x, y){
         super(game);
         this.size = Math.random() * 10 + 10;
+        this.x = x;
         this.y = y;
         this.speedX = Math.random();
         this.speedY = Math.random();
-        this.color = 'black';
+        this.color = 'red';
     };
     draw(context){
         context.beginPath();
@@ -45,7 +46,7 @@ export class Splash extends Particle{
         this.gravity += 0.1;
         this.y += this.gravity;
     }
-    draw(){
+    draw(context){
         context.drawImage(this.image, this.x, this.y, this.size, this.size);
     }
 
@@ -62,7 +63,7 @@ export class Fire extends Particle{
         this.speedY = 1;
         this.va = Math.random() * 0.2 - 0.1;
     }
-    upadte(){
+    update(){
         super.update();
         this.angle += this.va;
         this.x += Math.sin(this.angle * 5);

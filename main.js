@@ -33,7 +33,7 @@ window.addEventListener('load', function () {
             this.winningScore = 40;
             this.fontColor = 'black';
             this.time = 0;
-            this.maxTime = 30000;
+            this.maxTime = 60000;
             this.gameOver = false;
             this.lives = 5;
             this.player.currentState = this.player.states[0];
@@ -60,7 +60,7 @@ window.addEventListener('load', function () {
             });
             //handle particles
             this.particles.forEach((particle, index) => {
-                particles.update();
+                particle.update();
             });
             if (this.particles.length > this.maxParticles) {
                 this.particles.length = this.maxParticles;
