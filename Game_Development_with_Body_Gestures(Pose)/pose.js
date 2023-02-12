@@ -386,7 +386,10 @@ function centerpoint(results) {
 
   if (position == 'ArrowDown' && gameOver) restartGame();
   };
-  animate();
+  this.setTimeout(
+    animate(),
+    5000
+  )
 })
 
 
