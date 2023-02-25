@@ -6,22 +6,23 @@
   <script src="https://cdn.jsdelivr.net/npm/@mediapipe/control_utils/control_utils.js" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/@mediapipe/drawing_utils/drawing_utils.js" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/@mediapipe/hands/hands.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="stylehome.css">
 </head>
 
 <body>
   <div class="container">
     <video class="input_video" hidden="hidden"></video>
     <canvas class="output_canvas" width="1280px" height="720px"></canvas>
+
   </div>
   <div class="container">
-    <canvas id="canvas1"></canvas>
-    <canvas class="output_canvas" width="1280px" height="720px"></canvas>
-    <img id="playerImage" src="imgs/player.png" />
-    <img id="backgroundImage" src="imgs/background_single.png" />
-    <img id="enemyImage" src="imgs/enemy_1.png" />
-    <button type="button" id="fullScreenButton">Toggle fullscreen</button>
+    <p>
+      Enter the game <br><br>
+      <a href="game.html"><button>Start</button></a>
+    </p>
+
+
   </div>
-  <script src="hands.js"></script>
+  <script src="homepage.js"></script>
 </body>
 </html>
