@@ -8,6 +8,7 @@ body {
   background: white;
 }
 
+
 .output_canvas {
   width: 100%;
   height: 100%;
@@ -26,12 +27,13 @@ a {
   font-size: larger;
   text-decoration: none;
   color: black;
+  padding-left: 20%;
 }
 
 p {
   position: absolute;
   top: 40%;
-  left: 45%;
+  left: 42%;
   font-size: larger;
 }
 
@@ -39,4 +41,12 @@ button {
   font-size: larger;
   color: goldenrod;
   background-color: black;
+}
+table,th, tbody {
+  border: 2px solid red;
+}
+table {
+  position: absolute;
+  top:60%;
+  left: 33%;
 }
